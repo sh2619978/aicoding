@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aicoding
+  datasource:
+    url: jdbc:postgresql://db.xnhrqibzqgnshwiwmhtz.supabase.co:5432/postgres
+    username: postgres
+    password: jsHd3wLrujU4Ge1p
+    driver-class-name: org.postgresql.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.aicoding.infra.po
+  configuration:
+    map-underscore-to-camel-case: true
